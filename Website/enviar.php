@@ -16,10 +16,10 @@ $mensaje .= "Teléfono de contacto: " . $celular . " \r\n";
 $mensaje .= "Mensaje: " . $_POST['mensaje'] . " \r\n";
 $mensaje .= "Enviado el: " . date('d/m/Y', time());
 
-$para = 'santiagosonora@gmail.com';
-$asunto = 'Codo a Codo';
+$para = 'santiagochinas@hotmail.com';
+$asunto = 'Contacto desde mi sitio web';
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, utf8_decode($mensaje), $header);
 
-header("Location:index.html");
+header("Location:gracias.html");
 ?>
